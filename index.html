@@ -7,6 +7,7 @@
     <title>Kunal Dhauta</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
     <header class="header">
@@ -28,16 +29,16 @@
         <div class="home-content">
             <h3>Hello, Its Me</h3>
             <h1>Kunal Dhauta</h1>
-            <h3>And I'm a <span>Web Developer</span></h3>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.</p>
             <div class="social-media">
-                <a href=""><i class='bx bxl-facebook-circle'></i></a>
-                <a href=""><i class='bx bxl-twitter' ></i></a>
-                <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-                <a href=""><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.facebook.com/kunal.dhauta" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://twitter.com/kunaldhauta" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.instagram.com/kunal_dhauta/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://www.linkedin.com/in/kunaldhauta1618" target="_blank"><i class='bx bxl-linkedin' ></i></a>
             </div>
 
-            <a href="" class="btn"> Download CV</a>
+            <a href="CV/Kunal_Dhauta_CV.pdf" class="btn" target="_blank"> Download CV</a>
         </div>
         <div class="home-img">
             <img src="images/Kunal Dhauta.png" alt="" >
@@ -147,17 +148,19 @@
     <!-- Contact Section-->
     <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
-    <form action="#">
+
+    <form action="mailto:dhautakunal.oo7@gmail.com" method="post" autocapitalize="off">
         <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
+            <input type="text" name="name " value="" placeholder="Full Name" >
+            <input type="email" name="email" value="" placeholder="Email Address">
         </div>
         <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Email Subject">
+            <input type="number" name="number" placeholder="Mobile Number" >
+            <input type="text" name="subject" placeholder="Email Subject" value="" >
         </div>
-        <textarea name="" id="" cols="30" rows="9" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
+        <textarea  name="message" cols="30" rows="9" placeholder="Your Message" value=""></textarea>
+        
+        <input class="btn" type="submit" value="Send Message">
     </form>
     </section>
 
@@ -171,8 +174,13 @@
         </div>
     </footer>
 
+<!--Scroll reveal-->
+<script src="https://unpkg.com/scrollreveal"></script>
 
+<!--Typed js-->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.14"></script>
 
-    <script src="script.js"></script>
+<!--Send Mail-->
+
 </body>
 </html>
