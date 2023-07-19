@@ -20,6 +20,7 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
+
 body {
   background: var(--bg-color);
   color: var(--text-color);
@@ -68,6 +69,7 @@ section {
   font-size: 3.6rem;
   color: var(--text-color);
   display: none;
+  padding-right: 30px;
 }
 .home {
   display: flex;
@@ -149,7 +151,7 @@ span {
   background: var(--second-bg-color);
 }
 
-.about-img {
+.about-img img {
   width: 35vw;
 }
 .heading {
@@ -161,9 +163,7 @@ span {
   text-align: left;
   line-height: 1.2;
 }
-.about-img img {
-  width: 35vw;
-}
+
 .about-content h3 {
   font-size: 2.6rem;
 }
@@ -383,8 +383,9 @@ span {
   #menu-icon {
     display: block;
   }
-   .header {
+  .header {
     width: 100%;
+    padding: 2rem 3rem;
   }
   .navbar {
     position: absolute;
@@ -457,7 +458,7 @@ span {
     width: 90vw;
   }
   .about-img img {
-    width: 90vw;
+    width: 85vw;
   }
   .footer {
     flex-direction: column-reverse;
@@ -474,8 +475,8 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  width: 700px;
+  height: fit-content;
+  width: auto;
   margin: 0;
   display: none;
   position: fixed;
@@ -498,6 +499,7 @@ span {
   text-align: left;
   margin-top: 1rem;
   font-size: 1.6rem;
+  padding-bottom: 20px;
 }
 .popup-heading {
   font-size: 2.6rem;
@@ -509,7 +511,7 @@ span {
   justify-content: center;
   align-items: center;
   height: fit-content;
-  width: 700px;
+  width: auto;
   margin: 0;
   display: none;
   position: fixed;
@@ -546,7 +548,7 @@ span {
   justify-content: center;
   align-items: center;
   height: fit-content;
-  width: 700px;
+  width: auto;
   margin: 0;
   display: none;
   position: fixed;
@@ -583,7 +585,7 @@ span {
   justify-content: center;
   align-items: center;
   height: fit-content;
-  width: 700px;
+  width: auto;
   margin: 0;
   display: none;
   position: fixed;
@@ -621,7 +623,7 @@ span {
   justify-content: center;
   align-items: center;
   height: fit-content;
-  width: 700px;
+  width: auto;
   margin: 0;
   display: none;
   position: fixed;
