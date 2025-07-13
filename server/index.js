@@ -19,7 +19,7 @@ app.post('/contact', async (req, res) => {
 
     const htmlMessage = `
     <div style="font-family: Arial, sans-serif; color: #333;">
-      <h2>📬 New Message from Your Portfolio</h2>
+      <h2>📬 New Alert from Your Portfolio</h2>
       <p><strong>Name:</strong> ${name || "N/A"}</p>
       <p><strong>Email:</strong> ${email || "N/A"}</p>
       <p><strong>Mobile:</strong> ${number || "N/A"}</p>

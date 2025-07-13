@@ -116,29 +116,84 @@ closePopupBtn3.addEventListener("click", () => {
 // Optional: Add JavaScript code for form submission and handling other interactions.
 // For example, you can add code to handle form submission and display a success message.
 // You can also use JavaScript to create dynamic elements, add animations, or implement other functionalities.
-const openPopupBtn4 = document.getElementById("openPopupBtn4");
-const closePopupBtn4 = document.getElementById("closePopupBtn4");
-const submitReviewBtn4 = document.getElementById("submitReviewBtn4");
 const popup4 = document.getElementById("popup4");
-const reviewInput = document.getElementById("reviewInput4");
+const submitReviewBtn4 = document.getElementById("submitReviewBtn4");
+const closePopupBtn4 = document.getElementById("closePopupBtn4");
+const reviewerName4 = document.getElementById("reviewerName4");
+const reviewerEmail4 = document.getElementById("reviewerEmail4");
+const reviewInput4 = document.getElementById("reviewInput4");
 
-openPopupBtn4.addEventListener("click", () => {
-    popup4.style.display = "block";
-});
+// Open popup button
+const openPopupBtn4 = document.getElementById("openPopupBtn4");
+if (openPopupBtn4) {
+    openPopupBtn4.addEventListener("click", () => {
+        popup4.style.display = "flex"; // center popup
+    });
+}
 
+// Close popup button
 closePopupBtn4.addEventListener("click", () => {
     popup4.style.display = "none";
 });
 
-submitReviewBtn4.addEventListener("click", () => {
-    const reviewText4 = reviewInput4.value;
-    // Here, you can implement the code to send the review via email using a backend server.
-    // This part requires server-side scripting and is beyond the scope of frontend code.
-    // You can use technologies like Node.js, PHP, or others to handle the email sending process.
-    // For this example, we'll simply alert the review for demonstration purposes.
-    alert("Review submitted:\n${reviewText}");
-    popup.style.display = "none";
+// Submit review button
+submitReviewBtn4.addEventListener("click", async () => {
+    const name = reviewerName4.value.trim() || "Anonymous Reviewer";
+    const email = reviewerEmail4.value.trim();
+    const review = reviewInput4.value.trim();
+
+    // Basic validation
+    if (!email) {
+        alert("Please enter your email.");
+        return;
+    }
+    if (!review) {
+        alert("Please write your review.");
+        return;
+    }
+
+    // Disable button to prevent multiple submissions
+    submitReviewBtn4.disabled = true;
+    submitReviewBtn4.textContent = "Sending...";
+
+    try {
+        const response = await fetch("https://kunaldhauta.onrender.com/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                name,
+                email,
+                subject: "📩 Portfolio Website Review",
+                message: review,
+                number: "", // optional, can be removed
+            }),
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            alert("✅ Review sent successfully!");
+            popup4.style.display = "none";
+            // Clear inputs
+            reviewerName4.value = "";
+            reviewerEmail4.value = "";
+            reviewInput4.value = "";
+        } else {
+            alert("❌ Error sending review: " + (result.error || "Unknown error"));
+        }
+    } catch (error) {
+        alert("❌ Failed to send review. Try again later.");
+        console.error(error);
+    } finally {
+        submitReviewBtn4.disabled = false;
+        submitReviewBtn4.textContent = "Submit";
+    }
 });
+
+
+
 // ---- Contact Form Submission (Email via Backend) ----
 const contactForm = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");

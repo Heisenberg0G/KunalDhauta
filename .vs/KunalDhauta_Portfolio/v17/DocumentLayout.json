@@ -26,15 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -44,7 +40,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Kunal Dhauta\\KunalDhauta_Portfolio\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADAAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAAAPAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-07-13T19:18:11.086Z",
               "EditorCaption": ""
@@ -57,7 +53,7 @@
               "RelativeDocumentMoniker": "styles.css",
               "ToolTip": "C:\\Kunal Dhauta\\KunalDhauta_Portfolio\\styles.css",
               "RelativeToolTip": "styles.css",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAFoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8CAAAAAAAAAAAswGkCAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-07-13T19:05:39.079Z",
               "EditorCaption": ""
@@ -70,9 +66,10 @@
               "RelativeDocumentMoniker": "server\\index.js",
               "ToolTip": "C:\\Kunal Dhauta\\KunalDhauta_Portfolio\\server\\index.js",
               "RelativeToolTip": "server\\index.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-13T16:55:24.497Z"
+              "WhenOpened": "2025-07-13T16:55:24.497Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -82,9 +79,10 @@
               "RelativeDocumentMoniker": "script.js",
               "ToolTip": "C:\\Kunal Dhauta\\KunalDhauta_Portfolio\\script.js",
               "RelativeToolTip": "script.js",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAAAMkAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAIwMEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-13T16:51:39.143Z"
+              "WhenOpened": "2025-07-13T16:51:39.143Z",
+              "EditorCaption": ""
             }
           ]
         }
