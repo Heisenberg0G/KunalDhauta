@@ -1,0 +1,16 @@
+# VS config
+.vs/
+*.user
+*.suo
+
+# Node.js
+node_modules/
+.env
+
+# Logs
+logs/
+*.log
+
+# System
+.DS_Store
+Thumbs.db
