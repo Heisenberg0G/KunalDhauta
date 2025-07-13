@@ -169,7 +169,7 @@ if (contactForm) {
         formStatus.style.color = "black";
 
         try {
-            const response = await fetch("http://localhost:5000/contact", {
+            const response = await fetch("https://kunaldhauta.onrender.com/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
